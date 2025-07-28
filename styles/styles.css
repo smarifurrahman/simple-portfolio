@@ -29,30 +29,67 @@
   color: #757575;
 }
 
-.btn {
+.background-primary {
+  background-color: #fff8f3;
+}
+
+.description-font {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.btn-primary {
   background-color: #fd6e0a;
   color: white;
   font-size: 15px;
   font-weight: 700;
-  border: none;
+  border: 1px solid #fd6e0a;
   border-radius: 5px;
   padding: 15px 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
+.btn-primary:hover {
+  background-color: white;
+  color: #fd6e0a;
+  transform: scale(1.01);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #fd6e0a;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid #fd6e0a;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
   background-color: #f16b0b;
+  color: white;
   transform: scale(1.02);
 }
 
 /* individual styles */
 
+header {
+  background-image: url("../assets/images/developer.png"),
+    url("../assets/images/header_bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left 20px, bottom right;
+  background-size: 76px auto, 710px auto;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 150px;
+  padding: 25px 150px 0;
 }
 
 header nav h3 {
@@ -78,4 +115,27 @@ header nav ul li a {
   justify-content: space-between;
   align-items: center;
   margin-left: 150px;
+}
+
+.banner-content {
+  max-width: 45%;
+}
+
+.banner-content h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.banner-content h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.banner-content p {
+  margin-bottom: 23px;
+}
+
+.banner-image {
+  width: 500px;
+  margin-right: 15px;
 }
