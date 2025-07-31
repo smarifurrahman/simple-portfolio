@@ -270,6 +270,10 @@ main {
   align-items: center;
 }
 
+.column-container {
+  flex: 1;
+}
+
 .summary-container .items-content {
   width: 90%;
   text-align: justify;
@@ -307,4 +311,69 @@ main {
 
 #resume-summary button {
   margin-top: 40px;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 100px;
+  padding: 130px 150px;
+  display: flex;
+  gap: 50px;
+}
+
+.connect-section,
+.message-section {
+  flex: 1;
+}
+
+/* Connect Section Styles */
+
+footer h3 {
+  text-align: left !important;
+  margin-bottom: 15px;
+}
+
+.connect-section p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.connect-section .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.connect-section .social-links a {
+  transition: transform 0.3s ease;
+}
+
+.connect-section .social-links a:hover {
+  transform: scale(1.08);
+}
+
+/* message form styles */
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.message-form input,
+.message-form textarea {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: #fff;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, outline 0.3s ease, font-weight 0.3s ease;
+}
+
+.message-form input:focus,
+.message-form textarea:focus {
+  font-weight: 600;
+  border-color: #fd6e0a;
+  outline: none;
 }
