@@ -50,6 +50,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   line-height: normal;
+  text-align: center;
 }
 
 .section-description {
@@ -251,4 +252,59 @@ main {
 
 .skill-card h5 {
   margin-bottom: 15px;
+}
+
+/* Summary of My Resume Section */
+
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+  flex: 1;
+}
+
+#resume-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-container .items-content {
+  width: 90%;
+  text-align: justify;
+}
+
+.summary-container .column-title {
+  color: #474747;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.summary-container .item-heading {
+  color: #474747;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.summary-container .items-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summary-container hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  opacity: 0.8;
+}
+
+#resume-summary button {
+  margin-top: 40px;
 }
