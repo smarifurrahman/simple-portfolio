@@ -192,24 +192,21 @@ main {
 /* about me section */
 #about-me {
   text-align: center;
-  padding: 120px;
-}
-
-.about-container {
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  padding: 20px;
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-me-description {
-  margin: 15px 0;
+  margin: 15px 0 20px;
+  width: 80%;
 }
 
 .about-info {
   display: flex;
   justify-content: space-around;
-  gap: 5px;
+  gap: 50px;
 }
 
 /* do section styles */
