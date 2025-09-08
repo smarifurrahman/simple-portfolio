@@ -179,8 +179,9 @@ header nav ul li a {
   margin-bottom: 23px;
 }
 
-.banner-content button {
-  margin-right: 10px;
+.banner-button {
+  display: flex;
+  gap: 10px;
 }
 
 .banner-image {
@@ -388,6 +389,48 @@ main {
   .section-description,
   .item-subtitle {
     /* text-align: justify; */
+  }
+
+  header {
+    background-image: url("../assets/images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 710px auto;
+  }
+
+  /* nav */
+  header nav {
+    flex-direction: column;
+    padding: 25px 50px 0;
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  /* banner */
+  .banner {
+    flex-direction: column;
+    margin: 0 50px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-button {
+    flex-direction: column;
+    width: 185px;
+  }
+
+  .banner-image {
+    width: 100%;
+    margin-right: 0;
   }
 
   /* main styles */
