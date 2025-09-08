@@ -315,7 +315,7 @@ main {
 }
 
 /* Footer Styles */
-footer {
+#contact {
   margin-top: 100px;
   padding: 130px 150px;
   display: flex;
@@ -329,8 +329,8 @@ footer {
 
 /* Connect Section Styles */
 
-footer h3 {
-  text-align: left !important;
+#contact h3 {
+  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -377,4 +377,58 @@ footer h3 {
   font-weight: 600;
   border-color: #fd6e0a;
   outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  /* global */
+  .section-description,
+  .item-subtitle {
+    /* text-align: justify; */
+  }
+
+  /* main styles */
+  main {
+    margin: 0 50px;
+  }
+
+  #about-me {
+    padding: 100px 0;
+  }
+
+  .about-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skills-container,
+  .summary-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .summary-container .items-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact {
+    flex-direction: column-reverse;
+    padding: 100px 50px;
+  }
+
+  #contact h3 {
+    text-align: center;
+  }
+
+  .connect-section .social-links {
+    justify-content: center;
+  }
+
+  .connect-section p {
+    text-align: center;
+  }
 }
