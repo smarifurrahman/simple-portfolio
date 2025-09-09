@@ -433,6 +433,10 @@ main {
     align-items: center;
   }
 
+  .banner-content h1 {
+    font-size: 40px;
+  }
+
   .banner-button {
     flex-direction: column;
     width: 185px;
