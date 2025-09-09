@@ -380,17 +380,7 @@ main {
   outline: none;
 }
 
-.hide {
-  display: none;
-}
-
 @media screen and (max-width: 576px) {
-  /* global */
-  .section-description,
-  .item-subtitle {
-    /* text-align: justify; */
-  }
-
   header {
     background-image: url("../assets/images/header_bg.png");
     background-repeat: no-repeat;
@@ -405,7 +395,27 @@ main {
   }
 
   header nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
     gap: 20px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  nav ul li:nth-child(4),
+  nav ul li:nth-child(5) {
+    grid-column: span 3;
+  }
+
+  nav ul li:last-child {
+    display: none;
   }
 
   /* banner */
@@ -457,6 +467,8 @@ main {
     width: 100%;
     text-align: center;
   }
+
+  /* footer */
 
   #contact {
     flex-direction: column-reverse;
